@@ -1,0 +1,17 @@
+# The name of this application, which must be unique within the project.
+name: 'app'
+
+# The language and version for your app.
+type: 'nodejs:14'
+
+# The size of the app's persistent disk (in MB).
+disk: 2048
+
+# The app's configuration when it's exposed to the web.
+web:
+    locations:
+        '/':
+            # The public directory relative to the app root.
+            root: 'web'
+            # The front-controller script which determines where to send non-static requests.
+            passthru: '/app.js'
