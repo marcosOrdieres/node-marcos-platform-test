@@ -7,5 +7,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app to test Marcos platform listening on port ${port}`)
+  console.log(`Example app to test Marcos platform for Express listening on port ${port}`)
 })
